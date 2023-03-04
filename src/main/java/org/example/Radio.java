@@ -5,27 +5,35 @@ public class Radio {
     private int currentVolume;
 
     public void next() {
-        if (currentStation != 9)
+        if (currentStation != 9) {
             currentStation++;
-        else currentStation = 0;
+        } else {
+            currentStation = 0;
+        }
     }
 
     public void prev() {
-        if (currentStation != 0)
+        if (currentStation != 0) {
             currentStation--;
-        else currentStation = 9;
+        } else {
+            currentStation = 9;
+        }
     }
 
     public void volumeMax() {
-        if (currentVolume != 10)
+        if (currentVolume != 10) {
             currentVolume++;
-        else currentStation = 10;
+        } else {
+            currentStation = 10;
+        }
     }
 
     public void volumeMin() {
-        if (currentVolume != 0)
+        if (currentVolume != 0) {
             currentVolume--;
-        else currentStation = 0;
+        } else {
+            currentStation = 0;
+        }
     }
 
     public int getCurrentStation() {
